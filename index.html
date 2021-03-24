@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Таймер</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<video class="video-background" loop muted autoplay>
+  <source src="time.mp4">
+</video>
+<div class="video-overlay"></div>
+
+<div class="container">
+    <div class="input-container" id="input-container">
+        <h1>Настройте свой таймер!</h1>
+        <form class="form" id="countdownForm">
+            <label for="title">Название</label>
+            <input type="text" id="title" placeholder="До какого события вы считаете время?">
+            <label for="date-picker">Выберите дату</label>
+            <input type="date" id="date-picker">
+            <button type="submit">Готово</button>
+        </form>
+    </div>
+
+  <div class="countdown" id="countdown" hidden>
+    <h1 id="countdown-title"></h1>
+    <ul>
+      <li><span></span>Дней</li>
+      <li><span></span>Часов</li>
+      <li><span></span>Минут</li>
+      <li><span></span>Секунд</li>
+    </ul>
+    <button id="countdown-button">Сброс</button>
+  </div>
+
+  <div class="complete" id="complete" hidden>
+    <h1 class="complete-title">Отсчёт успешно закончен!</h1>
+    <h1 id="complete-info"></h1>
+    <button id="complete-button">Новый отсчёт</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
