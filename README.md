@@ -1,2 +1,2 @@
 # timer
-Link https://github.com/mxassanov/timer.git
+Link https://mxassanov.github.io/timer/
